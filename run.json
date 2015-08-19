@@ -1,0 +1,13 @@
+{
+    "InstanceType": "t2.micro",
+    "BlockDeviceMappings": [
+        {
+            "DeviceName": "/dev/xvdj",
+            "Ebs": {
+                "VolumeSize": 8,
+                "VolumeType": "gp2",
+                "DeleteOnTermination": true
+            }
+        }
+    ]
+}

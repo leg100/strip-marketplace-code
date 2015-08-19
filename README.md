@@ -1,15 +1,17 @@
 # strip-marketplace-code
 
+WARNING: I haven't got this to work, the CentOS image it produces seems to be corrupted.
+
 A script to effectively strip the marketplace code from an AMI. Read about the problem here:
 
 https://www.caseylabs.com/remove-the-aws-marketplace-code-from-a-centos-ami/
 
-This script automates the steps described in that article.
+This script automates the steps described in that article. You'll need [awscli](https://aws.amazon.com/cli/) and [jq](https://stedolan.github.io/jq/).
 
 To run:
 
 ```
-./run.sh <marketplace-ami-id>
+./run.sh <marketplace-ami-id> <name-of-new-ami>
 ```
 
 Which'll:
@@ -20,3 +22,5 @@ Which'll:
 * attach new vol as the root vol
 * create image from the instance.
 * spit out a new ami id
+
+Note this'll take a bit of time.

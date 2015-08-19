@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -e
+set -x
+
+mkfs -t xfs /dev/xvdj
+dd bs=64K if=/dev/xvda of=/dev/xvdj
+poweroff
