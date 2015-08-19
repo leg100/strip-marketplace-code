@@ -1,6 +1,6 @@
 # strip-marketplace-code
 
-WARNING: I haven't got this to work, the CentOS image it produces seems to be corrupted.
+WARNING: I haven't got this to work, the CentOS image it produces seems to be corrupted (not surprisingly, given it does a raw copy of a mounted root device)
 
 A script to effectively strip the marketplace code from an AMI. Read about the problem here:
 
